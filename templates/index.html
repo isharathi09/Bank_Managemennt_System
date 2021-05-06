@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to RMA Bank</title>
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='trial.css') }}" </head>
+
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href=#home>Home</a></li>
+                    <li><a>Our Services</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="subdropdown">
+                                <a href="/savings">Create Account</a>
+                                <a href="/modifyD">Modify Account Details</a>
+                                <a href="/transfer">Change your Branch</a>
+                                <a href="/type">Change Account Type</a>
+                                <a href="/amtdeposit">Deposit Amount</a>
+                                <a href="/amtWithdrawal">Withdraw Amount</a>
+                                <a href="/balance">Balance Enquiry</a>
+                                <a href="/close">Close Account</a>
+                            </div>
+                            <a href="/fixeddeposit">Fixed Deposits</a>
+                            <a href="/recurdeposit">Recurring Deposits</a>
+                            <a href="/insurance">Insurance Policies</a>
+                            <a href="/mutualfund">Mutual Funds</a>
+                        </div>
+                      </div> 
+                      </li>
+                    <li><a href=#about>About Us</a></li>
+                    <li><a href=#contact>Contact Us</a></li>
+                </ul>
+            </nav>
+            <!--<div class="clear"></div>-->
+
+
+
+            <section id="home">
+                <div class="logo">
+                    <img src="/static/RMA-Bank-unscreen.gif" alt="Our logo">
+                </div>
+                <h1 class="hometitle"> Welcome to RMA Bank </h1>
+                <p>A bank management website implemented using HTML5, CSS3, Python and MongoDB</p>
+            </section>
+
+            <section id="about">
+                <div class="about-section">
+                    <h1 style="color: rgb(10, 62, 105);">About Us</h1>
+                    <p></p>
+                  </div>
+                  
+                  <h2 style="text-align:center; color: darkblue; font-size:xx-large; text-decoration: underline;";></h2>
+                  <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <img src="/static/kimaya.png" alt="Jane" style="width:20vh" height="120vh">
+                        <div class="container1">
+                          <h2 style="color: darkblue;">Kimaya Abhyankar</h2>
+                          <p class="title">Frontend Developer</p>
+                          <p>abhyankarkn19.comp@coep.ac.in</p>
+                          <p><button class="button">Contact: 8380054458</button></p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                        <img src="/static/isha.jpg" alt="Mike" style="width:20vh" height="140vh">
+                        <div class="container1">
+                          <h2 style="color: darkblue;">Isha Rathi</h2>
+                          <p class="title">Backend Developer</p>
+                          <p>rathiir19.comp@coep.ac.in</p>
+                          <p><button class="button">Contact: 7887539540</button></p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <img src="/static/mihir.jpg" alt="John" style="width:20vh" height="120vh">
+                        <div class="container1">
+                          <h2 style="color: darkblue;">Mihir Malani</h2>
+                          <p class="title">Database Developer</p>
+                          <p>malanimy19.comp@coep.ac.in</p>
+                          <p><button class="button">Contact: 7666886149</button></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </section>
+            <section id="contact">
+                <div class="container2">
+      <form>          
+      <label for="fname" style="color: darkcyan;">Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="num" style="color: darkcyan;">Contact Number</label>
+      <input type="text" id="num" name="num" placeholder="888888 888888">
+
+      <label for="Email" style="color: darkcyan;">Email</label>
+      <input type="email" id="Email" name="Email" placeholder="username@example.com">
+  
+      <label for="country" style="color: darkcyan;">Country</label>
+      <select id="country" name="country">
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="Japan">Japan</option>
+        <option value="Australia">Australia</option>
+        <option value="Canada">Canada</option>
+        <option value="Germany">Germany</option>
+      </select>
+  
+      <label for="subject" style="color: darkcyan;">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+            </section>
+        </div>
+     
+        
+    </body>
+
+</html>

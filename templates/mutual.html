@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "index.html";
+    };
+
+function display() {
+  alert("Form submitted successfully");
+}
+</script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #55325e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit]:hover {
+  background-color: #bba4c2;
+}
+
+
+input[type=button] {
+  background-color: #55325e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #a4a4c2;
+}
+
+
+.container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  border-radius: 5px;
+  background-color: #c7caf1;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center; color: #55325e ; font-style: italic; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Mutual Funds Form</h3>
+
+<div class="container">
+    
+  <form id="savings" action="/Mutualfund" method="POST" target="_self" autocomplete="on" novalidate> 
+    <label for="fname">Name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+
+    <label for="address">Address:</label><br>
+    <input type="text" id="address" name="address"><br><br>
+
+    <label for="pan">PAN:</label><br>
+    <input type="text" id="pan" name="pan"><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <label for="birthday">Date of Birth:</label>
+    <input type="date" id="birthday" name="birthday">
+
+    <label for="accNum">Account Number:</label><br>
+    <input type="number" id="accNum" name="accNum"><br><br>
+
+    <label for="account">Account Type</label>
+    <select id="account" name="account">
+        <option value="savings">Savings Account</option>
+        <option value="current">Current Account</option>
+      </select>
+
+      <label for="branch">Branch Name</label>
+      <select id="branch" name="branch">
+        <option value="one">Branch One</option>
+        <option value="two">Branch Two</option>
+        <option value="three">Branch Three</option>
+        <option value="four">Branch Four</option>
+      </select>
+  
+    <label for="investment">Investment and Payment Details</label>
+    <select id="investment" name="investment">
+        <option value="sip">Systematic Investment Plan</option>
+        <option value="otm">One Time Investment</option>
+      </select>
+
+      <label for="plan">Plan</label>
+      <select id="plan" name="plan">
+        <option value="regular">Regular</option>
+        <option value="direct">Direct</option>
+      </select>
+
+      <label for="option">Option</label>
+      <select id="option" name="option">
+        <option value="growth">Growth</option>
+        <option value="dividend">Dividend</option>
+      </select>
+
+      <label for="dividend">Dividend</label>
+      <select id="dividend" name="dividend">
+        <option value="reinvestment">Reinvestment</option>
+        <option value="payout">Payout</option>
+        <option value="transfer">Transfer</option>
+      </select>
+
+
+    <input type="submit" value="Submit" onclick="display()">
+    <input type="button" value="Go back" onclick="history.back()">
+  </form>
+</div>
+
+</body>
+</html>
