@@ -2,21 +2,10 @@
    This project has been developed using OOPS concepts like- Data Encapsulation, Inheritance and Exception Handling. 
 
 # Features
-1. Bank Accounts
-  i. Account Creation
-  ii. Modify Personal Details like Mobile No, Email, etc.
-  iii. Deposit/Withdraw Money
-  iv. Balance Enquiry
-  v. Branch Transfer
-  vi. Type Change
-  vii. Close Account 
-2. Bank Deposits
-  i. Fixed Deposits
-  ii. Recurring Deposits
-3. Mutual Funds
-   i. Apply for mutual funds by filling the form provided on the website.
-5. Insurance Policies
-    i. Some insurance policies have been listed on the website.
+1. *Bank Accounts* : Create Account, Modify Personal Details, Deposit/Withdraw money, Branch Transfer, Type Change, Balance Enquiry, Close Account.
+2. *Bank Deposits* : Fixed Deposits, Recurring Deposits.
+3. *Mutual Funds* :  Apply for mutual funds by filling the form provided on the website.
+4. *Insurance Policies* : Some insurance policies have been listed on the website.
 
 # Technologies Used
 This project has a 3 tier architecture and following is the stack that we have used to develop a full stack website :
@@ -26,6 +15,6 @@ This project has a 3 tier architecture and following is the stack that we have u
 4. For linkinng : Flask Framework
 
 # Contributors
-  Isha Rathi
-  Kimaya Abhyankar
-  Mihir Malani
+1. Isha Rathi
+2. Kimaya Abhyankar
+3. Mihir Malani
